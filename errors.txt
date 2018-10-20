@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 89: expected end of line
+    stop music "Aqua_1_Rod_Hamilton.mp3"
+               ^
+
+Ren'Py Version: Ren'Py 7.1.1.929
+Wed Oct 17 08:57:30 2018

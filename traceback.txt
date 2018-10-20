@@ -1,0 +1,50 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 34, in script
+    ""
+  File "renpy/common/000window.rpy", line 98, in _window_auto_callback
+    _window_show()
+  File "renpy/common/000window.rpy", line 60, in _window_show
+    renpy.with_statement(trans)
+IOError: Couldn't find file 'THE_COCONUT_MONKEYROCKET_with_The_Cow_Goes_Moo_-_03_-_Aunt_Fish'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 34, in script
+    ""
+  File "/Users/roxannekim/Desktop/2018FALL/3_WED_ComputationalApproachestoNarrative/renpy-7.1.1-sdk/renpy/ast.py", line 644, in execute
+    statement_name("say")
+  File "/Users/roxannekim/Desktop/2018FALL/3_WED_ComputationalApproachestoNarrative/renpy-7.1.1-sdk/renpy/ast.py", line 45, in statement_name
+    i(name)
+  File "renpy/common/000window.rpy", line 98, in _window_auto_callback
+    _window_show()
+  File "renpy/common/000window.rpy", line 60, in _window_show
+    renpy.with_statement(trans)
+  File "/Users/roxannekim/Desktop/2018FALL/3_WED_ComputationalApproachestoNarrative/renpy-7.1.1-sdk/renpy/exports.py", line 1456, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "/Users/roxannekim/Desktop/2018FALL/3_WED_ComputationalApproachestoNarrative/renpy-7.1.1-sdk/renpy/display/core.py", line 2217, in do_with
+    clear=clear)
+  File "/Users/roxannekim/Desktop/2018FALL/3_WED_ComputationalApproachestoNarrative/renpy-7.1.1-sdk/renpy/display/core.py", line 2662, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "/Users/roxannekim/Desktop/2018FALL/3_WED_ComputationalApproachestoNarrative/renpy-7.1.1-sdk/renpy/display/core.py", line 3086, in interact_core
+    renpy.audio.audio.interact()
+  File "/Users/roxannekim/Desktop/2018FALL/3_WED_ComputationalApproachestoNarrative/renpy-7.1.1-sdk/renpy/audio/audio.py", line 1062, in interact
+    periodic()
+  File "/Users/roxannekim/Desktop/2018FALL/3_WED_ComputationalApproachestoNarrative/renpy-7.1.1-sdk/renpy/audio/audio.py", line 993, in periodic_thread_main
+    periodic_pass()
+  File "/Users/roxannekim/Desktop/2018FALL/3_WED_ComputationalApproachestoNarrative/renpy-7.1.1-sdk/renpy/audio/audio.py", line 937, in periodic_pass
+    c.periodic()
+  File "/Users/roxannekim/Desktop/2018FALL/3_WED_ComputationalApproachestoNarrative/renpy-7.1.1-sdk/renpy/audio/audio.py", line 419, in periodic
+    topf = load(self.file_prefix + filename + self.file_suffix)
+  File "/Users/roxannekim/Desktop/2018FALL/3_WED_ComputationalApproachestoNarrative/renpy-7.1.1-sdk/renpy/audio/audio.py", line 71, in load
+    rv = renpy.loader.load(fn)
+  File "/Users/roxannekim/Desktop/2018FALL/3_WED_ComputationalApproachestoNarrative/renpy-7.1.1-sdk/renpy/loader.py", line 576, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'THE_COCONUT_MONKEYROCKET_with_The_Cow_Goes_Moo_-_03_-_Aunt_Fish'.
+
+Darwin-17.7.0-x86_64-i386-64bit
+Ren'Py 7.1.1.929
+Memory of Love 1.0
+Wed Oct 17 09:52:29 2018
